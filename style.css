@@ -1,0 +1,155 @@
+/* Import Google font - Poppins */
+/* Import Google font - Poppins */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins",
+    sans-serif;
+}
+body {
+  min-height: 95vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #a0b8c4;
+}
+.wrapper {
+  position: relative;
+  max-width: 480px;
+  width: 100%;
+  border-radius: 15px;
+  padding: 25px
+    35px
+    125px;
+  background: #476bcf;
+  box-shadow: 0
+    6px
+    11px
+    rgba(17, 16, 16, 0.1);
+  overflow: hidden;
+}
+.form.login {
+  position: absolute;
+  left: 50%;
+  bottom: -80%;
+  transform: translateX(
+    -50%
+  );
+  width: calc(
+    100% +
+      225px
+  );
+  padding: 25px
+    145px;
+  border-radius: 55%;
+  height: 95%;
+  background: #c0b7b7;
+  transition: all
+    0.7s
+    ease;
+}
+.wrapper.active
+  .form.login {
+  bottom: -14%;
+  border-radius: 36%;
+  box-shadow: 0 -5px
+    11px rgba(15, 15, 15, 0.1);
+}
+.form
+  header {
+  font-size: 35px;
+  text-align: center;
+  color: #f5e8e8;
+  font-weight: 605;
+  cursor: pointer;
+}
+.form.login
+  header {
+  color: #3e3b3b;
+  opacity: 0.7;
+}
+.wrapper.active
+  .form.login
+  header {
+  opacity: 1.1;
+}
+button {
+  width: 175px;
+  height: 54px;
+}
+
+.wrapper
+  form {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  margin-top: 42px;
+}
+form
+  input {
+  height: 62px;
+  outline: none;
+  border: none;
+  padding: 0
+    16px;
+  font-size: 17px;
+  font-weight: 390;
+  color: #544d4d;
+  border-radius: 7px;
+  background: #fdfcfc;
+}
+.form.login
+  input {
+  border: 1.1px
+    solid
+    #f7f2f2;
+}
+.form.login
+  input:focus {
+  box-shadow: 0
+    1px 0
+    #fbf9f9;
+}
+form
+  .checkbox {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+}
+.checkbox
+  input[type="checkbox"] {
+  height: 17px;
+  width: 17px;
+  accent-color: #fff;
+  cursor: pointer;
+}
+form
+  .checkbox
+  label {
+  cursor: pointer;
+  color: #fff;
+}
+form a {
+  color: #3a3838;
+  text-decoration: none;
+}
+form
+  a:hover {
+  text-decoration: underline;
+}
+form
+  input[type="submit"] {
+  margin-top: 16px;
+  padding: none;
+  font-size: 17px;
+  font-weight: 505;
+  cursor: pointer;
+}
+.form.login
+  input[type="submit"] {
+  background: #436fe8;
+  color: #fff;
+  border: none;
+}
